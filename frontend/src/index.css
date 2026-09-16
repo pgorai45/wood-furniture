@@ -1,0 +1,25 @@
+@import './assets/css/header.css';
+@import './assets/css/home.css';
+@import './assets/css/roomcollection.css';
+@import './assets/css/cart.css';
+@import './assets/css/wishlist.css';
+@import './assets/css/stores.css';
+@import './assets/css/admin.css';
+@import './assets/css/login.css';
+@import './assets/css/footer.css';
+@import './assets/css/responsive.css';
+
+/* Global resets and font declarations */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,290 @@
+/* ===========================
+   STORE PAGE
+=========================== */
+html{
+    scroll-behavior: smooth;
+}
+
+.store-page{
+    background:#f8f8f8;
+    scroll-behavior: smooth;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.store-hero-section{
+    width:90%;
+    max-width:1400px;
+    height:420px;
+    margin:35px auto;
+    border-radius:18px;
+    overflow:hidden;
+    position:relative;
+    background:
+        linear-gradient(rgba(231, 207, 207, 0.45), rgba(130, 128, 128, 0.45)),
+        url("/img/logo/logo2.jpg") center/cover no-repeat;
+
+}
+
+.store-hero-overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:#fff;
+    padding:20px;
+}
+
+.store-hero-title{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.store-hero-text{
+    max-width:700px;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.store-hero-btn{
+    text-decoration:none;
+    background:#D4704C;
+    color:#fff;
+    padding:14px 35px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.store-hero-btn:hover{
+    background:#b85a3a;
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+.store-section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.store-section-title{
+    font-size:38px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.store-section-subtitle{
+    color:#666;
+    font-size:17px;
+}
+
+/* ===========================
+   STORE GRID
+=========================== */
+
+.store-location-section{
+    width:90%;
+    max-width:1400px;
+    margin:70px auto;
+}
+
+.store-location-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.store-location-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.store-location-card:hover{
+    transform:translateY(-8px);
+}
+
+.store-location-image{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.store-location-content{
+    padding:25px;
+    
+}
+
+.store-city-name{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.store-location-content p{
+    margin-bottom:12px;
+    color:#555;
+    line-height:1.6;
+}
+
+.store-rating{
+    color:#ff9800;
+    font-weight:600;
+}
+
+.store-direction-btn{
+    display:inline-block;
+    margin-top:18px;
+    text-decoration:none;
+    background:#D4704C;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.store-direction-btn:hover{
+    background:#b85a3a;
+}
+
+/* ===========================
+   MAP
+=========================== */
+
+.store-map-section{
+    width:90%;
+    max-width:1400px;
+    margin:80px auto;
+}
+
+.store-map-box iframe{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:15px;
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.store-benefit-section{
+    width:90%;
+    max-width:1400px;
+    margin:80px auto;
+}
+
+.store-benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:25px;
+}
+
+.store-benefit-card{
+    background:#fff;
+    padding:35px 20px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.store-benefit-card:hover{
+    transform:translateY(-8px);
+}
+
+.store-benefit-card i{
+    font-size:45px;
+    color:#D4704C;
+    margin-bottom:20px;
+}
+
+.store-benefit-card h3{
+    font-size:18px;
+}
+
+/* ===========================
+   REVIEW
+=========================== */
+
+.store-review-section{
+    width:90%;
+    max-width:1000px;
+    margin:80px auto;
+}
+
+.store-review-card{
+    background:#fff;
+    border-radius:15px;
+    padding:45px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.store-review-stars{
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.store-review-text{
+    color:#555;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.store-review-user{
+    color:#D4704C;
+    font-weight:600;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.store-contact-section{
+    width:90%;
+    max-width:900px;
+    margin:80px auto;
+    text-align:center;
+    background:#fff;
+    border-radius:18px;
+    padding:60px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.store-contact-title{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.store-contact-text{
+    color:#666;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.store-contact-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#D4704C;
+    color:#fff;
+    padding:14px 40px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.store-contact-btn:hover{
+    background:#b85a3a;
+}

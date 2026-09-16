@@ -1,0 +1,366 @@
+/* ===========================
+   Breadcrumb
+=========================== */
+
+.breadcrumb {
+    max-width: 1400px;
+    margin: 25px auto 10px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumb a {
+    color: #d4704c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb span:last-child {
+    color: #222;
+    font-weight: 600;
+}
+
+/* ===========================
+   Wishlist Hero
+=========================== */
+
+.wishlist-hero{
+
+    background:#f8f5ef;
+
+    padding:20px 20px 50px;
+
+    text-align:center;
+
+}
+
+.wishlist-heading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.heading-line{
+
+    width:70px;
+
+    height:1px;
+
+    background:#d6d6d6;
+
+}
+
+.wishlist-heading span{
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#777;
+
+    font-weight:500;
+
+}
+
+.wishlist-hero h1{
+
+    font-size:52px;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+.wishlist-hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ===========================
+   Wishlist Card
+=========================== */
+
+.wishlist-wrapper{
+
+    padding:50px 20px;
+
+    background:#f8f5ef;
+
+}
+
+.wishlist-card{
+
+    max-width:760px;
+
+    margin:auto;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.wishlist-image img{
+
+    width:170px;
+
+    margin-bottom:30px;
+
+}
+
+.wishlist-card h2{
+
+    font-size:38px;
+
+    color:#222;
+
+    margin-bottom:18px;
+
+}
+
+.wishlist-card p{
+
+    max-width:540px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ===========================
+   Continue Button
+=========================== */
+
+.continue-shopping{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:35px;
+
+    background:#d4704c;
+
+    color:#fff;
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    border:2px solid #d4704c;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.continue-shopping:hover{
+
+    background:#fff;
+    color:#d4704c;
+    border-color:#d4704c;
+
+}
+
+.continue-shopping i{
+
+    transition:.3s;
+
+}
+
+.continue-shopping:hover i{
+
+    transform:translateX(6px);
+
+}
+
+/* ===========================
+   Divider
+=========================== */
+
+.wishlist-divider{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:40px 0 30px;
+
+}
+
+.wishlist-divider::before,
+
+.wishlist-divider::after{
+
+    content:"";
+
+    width:120px;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+.wishlist-divider span{
+
+    margin:0 20px;
+
+    color:#888;
+
+    font-size:15px;
+
+}
+
+
+
+/* ===========================
+   Category Pills
+=========================== */
+
+.wishlist-tags{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+.wishlist-tags a{
+
+    padding:14px 28px;
+
+    background:#f3f3f3;
+
+    color:#333;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.wishlist-tags a:hover{
+
+    background: #d4704c;
+
+    color:#fff;
+
+}
+
+
+
+/* ===========================
+   Wishlist Products
+=========================== */
+
+.wishlist-products{
+
+    max-width:1400px;
+
+    margin:80px auto;
+
+    padding:0 20px;
+
+}
+
+.wishlist-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .wishlist-hero h1{
+
+        font-size:36px;
+
+    }
+
+    .wishlist-card{
+
+        padding:40px 25px;
+
+    }
+
+    .wishlist-card h2{
+
+        font-size:30px;
+
+    }
+
+    .wishlist-divider::before,
+
+    .wishlist-divider::after{
+
+        width:50px;
+
+    }
+
+}

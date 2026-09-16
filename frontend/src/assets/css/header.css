@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.banner-icon {
+    font-size: 18px;
+}
+
+.banner-content p {
+    flex: 1;
+}
+
+.btn-later, .btn-allow {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn-later {
+    background-color: transparent;
+    color: #666;
+    border: 1px solid #ccc;
+}
+
+.btn-allow {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+ 
+}
+
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+    transition:all .35s ease;
+}
+.navbar.hide-top .navbar-top{
+    max-height:0;
+    opacity:0;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 80px;    
+    height: 80px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.logo h2 {
+    color: #333;
+    font-size: 25px;
+    font-weight: 600;
+    font-weight: bold;
+    
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 140px;
+    background-color:white;
+    border-radius: 4px;
+    border: 1px solid #a4a2a2;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    padding: 10px 15px;
+    flex: 1;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #999;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.search-results{
+    position:absolute;
+    top: calc(100% + 5px);
+    left:0;
+    width:100%;
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    display:none;
+    z-index:999;
+    
+}
+
+.search-results div{
+    padding:12px 16px;
+    cursor:pointer;
+    
+}
+
+.search-results div:hover{
+    background:#f5f5f5;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin: 0 10px;
+}
+
+.icon-link:hover {
+    color: #D4704C;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.badge {
+     
+    color:blacl;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+
+/* ===== CATEGORY MENU ===== */
+.category-menu {
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    padding: 12px 80px;
+    z-index: 1000;
+    transition:all .3s ease;
+}
+@keyframes slideDown{
+    from{
+        transform:translateY(-100%);
+    }
+    to{
+        transform:translateY(0);
+    }
+}
+
+.category-menu.fixed{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    box-shadow:0 2px 10px rgba(0,0,0,.12);
+    animation:slideDown .3s ease;
+}
+
+.category-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.category-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+
+.category-menu ul li a:hover,
+.category-menu ul li a.active {
+    color: #D4704C;
+    border-bottom: 2px solid #D4704C;
+
+}
+
+.category-menu .luxury {
+    color: #D4704C;
+    font-weight: 600;
+}
