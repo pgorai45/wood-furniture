@@ -1,0 +1,25 @@
+/* ===================================================
+   ADMIN PROFILE STYLES
+=================================================== */
+.profile-spec-card {
+  background: #f9fafb;
+  border: 1px solid var(--admin-border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.profile-spec-label {
+  color: var(--admin-text-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.profile-spec-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--admin-primary);
+}

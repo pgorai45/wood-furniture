@@ -15,7 +15,18 @@ import Cart from './pages/Cart';
 import Wishlist from './pages/Wishlist';
 import Profile from './pages/Profile';
 import Store from './pages/Store';
-import Admin from './pages/Admin';
+import ResetPassword from './pages/ResetPassword';
+
+// Admin Panel Modular imports
+import AdminLayout from './admin/AdminLayout';
+import Dashboard from './admin/pages/Dashboard';
+import Products from './admin/pages/Products';
+import AddProduct from './admin/pages/AddProduct';
+import EditProduct from './admin/pages/EditProduct';
+import Orders from './admin/pages/Orders';
+import Users from './admin/pages/Users';
+import Inventory from './admin/pages/Inventory';
+import AdminProfile from './admin/pages/AdminProfile';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -49,7 +60,21 @@ function App() {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/store" element={<Store />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+
+        {/* Modular Admin Routes */}
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="products" element={<Products />} />
+          <Route path="products/add" element={<AddProduct />} />
+          <Route path="products/edit/:id" element={<EditProduct />} />
+          <Route path="orders" element={<Orders />} />
+          <Route path="users" element={<Users />} />
+          <Route path="inventory" element={<Inventory />} />
+          <Route path="profile" element={<AdminProfile />} />
+        </Route>
+
         <Route path="*" element={<Home />} />
       </Routes>
 

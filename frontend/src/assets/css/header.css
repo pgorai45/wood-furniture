@@ -152,14 +152,15 @@ body {
 
 .icons {
     display: flex;
+    align-items: center;
     gap: 20px;
-    
 }
 
 .icon-link {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     text-decoration: none;
     color: #333;
@@ -169,12 +170,35 @@ body {
     margin: 0 10px;
 }
 
+.icon-link p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+}
+
 .icon-link:hover {
     color: #D4704C;
 }
 
 .icon {
     font-size: 24px;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-avatar-img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 1.5px solid #b8633b;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .badge {

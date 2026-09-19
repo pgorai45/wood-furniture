@@ -32,11 +32,14 @@ export const CartProvider = ({ children }) => {
       }
     });
 
-    // Sync with backend if user ID is present
+    // Sync with backend if user is authenticated
     try {
+      const userToken = localStorage.getItem('userToken');
       const savedUser = localStorage.getItem('user');
-      const userId = savedUser ? JSON.parse(savedUser).id : 1;
-      addToCartApi(userId, product.id, quantity).catch(() => {});
+      if (userToken && savedUser) {
+        const userObj = JSON.parse(savedUser);
+        addToCartApi(userObj.id, product.id, quantity).catch(() => {});
+      }
     } catch {}
 
     if (showFeedback) {

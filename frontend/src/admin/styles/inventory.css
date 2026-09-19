@@ -1,0 +1,31 @@
+/* ===================================================
+   ADMIN INVENTORY STYLES
+=================================================== */
+.stock-level-bar {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.stock-level-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.stock-good { background: #10b981; }
+.stock-low { background: #f59e0b; }
+.stock-out { background: #ef4444; }
+
+.stock-pill {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.stock-pill.good { background: #ecfdf5; color: #059669; }
+.stock-pill.low { background: #fffbeb; color: #d97706; }
+.stock-pill.out { background: #fef2f2; color: #dc2626; }

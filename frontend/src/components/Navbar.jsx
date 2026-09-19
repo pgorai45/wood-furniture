@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
 import { useAuth } from '../context/AuthContext';
+import { getAvatarUrl } from '../services/api';
 
 const SEARCH_SUGGESTIONS = [
   'Sofa',
@@ -146,7 +147,15 @@ const Navbar = () => {
 
           <a href="/profile" className="icon-link" id="profileBtn" onClick={handleProfileClick}>
             <span className="icon">
-              <i className="fa-regular fa-user"></i>
+              {user && user.avatar ? (
+                <img
+                  src={getAvatarUrl(user.avatar)}
+                  alt={user.name || 'Profile'}
+                  className="header-avatar-img"
+                />
+              ) : (
+                <i className="fa-regular fa-user"></i>
+              )}
             </span>
             <p>{user ? user.name.split(' ')[0] : 'Profile'}</p>
           </a>

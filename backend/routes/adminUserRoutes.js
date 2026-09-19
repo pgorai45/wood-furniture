@@ -9,7 +9,7 @@ const {
 } = require("../middleware/authMiddleware");
 
 
-// ================= GET ALL USERS =================
+// ================= GET ALL USERS (ONLY CUSTOMERS / ROLE='user') =================
 
 router.get("/", verifyToken, adminOnly, (req, res) => {
 
@@ -21,6 +21,7 @@ router.get("/", verifyToken, adminOnly, (req, res) => {
             created_at,
             role
         FROM users
+        WHERE role = 'user'
         ORDER BY id DESC
     `;
 
